@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   title: '羊毛的博客',
   description: '前端小白，大家一起来学习呀!',
@@ -41,6 +43,13 @@ module.exports = {
     //   },
     //   ['./guide/','指南']
     // ]
+  },
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@vuepress': path.join(__dirname, '../images/vuepress'),
+      }
+    }
   }
 }
 
