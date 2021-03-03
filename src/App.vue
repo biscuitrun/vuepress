@@ -1,17 +1,12 @@
 <template>
   <div id="app">
-    <div class="nav">
-      <About />
-    </div>
     <router-view />
   </div>
 </template>
 <script>
 // @ is an alias to /src
-import About from "@/views/About.vue";
 export default {
-  name: "app",
-  components: { About }
+  name: "app"
 };
 </script>
 <style lang="scss">
